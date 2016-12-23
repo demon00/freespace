@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;*/
+
+.main__page {
+	width: 100%;
+  overflow: hidden;
+}
+
+.main__wrapper {
+	height: 100vh;
+	background: url('../img/earth.jpg') no-repeat;
+	background-size: cover;
+	animation-name: scale;
+	animation-delay: 0.5s;
+	animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+.main__page_title {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 2.5em;
+	color: #fff;
+	text-align: center;
+	padding-top: 150px;
+	letter-spacing: 0.4em;
+}
+
+@keyframes scale {
+	from{
+   transform: scale3d(1,1,1);
+  } 
+  to{
+    transform: scale3d(1.2,1.2,1.2);
+  }
+}
+
+.main__menu {
+	font-size: .9em;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+}  
+
+.menu__link {
+	text-decoration: none;
+	font-size: .9em;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	position: absolute;
+	padding: 40px;
+}
+
+.menu__item_one {
+  right: 150px;
+  bottom: 150px;
+  transform: rotate(90deg);
+}
+
+.menu__item_two {
+	left: 150px;
+	bottom: 150px;
+	transform: rotate(-90deg);
+}
+
+.menu__item_tree {
+	right: 150px;
+  bottom: 300px;
+  transform: rotate(90deg);
+}
+
+.menu__item_four {
+	left: 150px;
+	bottom: 300px;
+	transform: rotate(-90deg);	
+}
